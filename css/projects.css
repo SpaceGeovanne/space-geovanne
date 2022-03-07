@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;   
+    box-sizing: border-box;
+    font-family: 'Saira Extra Condensed', sans-serif;
+}
+
+html,body {
+    height: 100%;
+}
+
+.parent{
+    display: flex;
+}
+
+.sidebar {
+    width: 20%;
+    height: 100%;
+    position: fixed;
+    background-color: red;
+}
+
+.sidebar-pos{
+    position: absolute;
+    top: 50%;
+    transform:translateY(-50%)
+}
+
+.img-sidebar{
+    text-align: center;
+}
+
+.img-sidebar img{ 
+    width: 80%;
+    border:8px solid #ff6767;
+    border-radius: 50%;
+}
+
+.menu {
+    margin:20px 0px;
+    text-align: center;
+}
+
+.menu a{
+    color: white;
+    opacity: 0.6;
+    font-size: 24px;
+    display: block;
+    margin-bottom: 15px;
+    text-decoration: none;
+}
+
+.menu a.selected{
+    opacity: 1;
+}
+
+.menu a > i{
+  margin: 6px;
+}
+
+.content{
+    position: absolute;
+    left: 20%;
+    width: 80%;
+    height: 100%;
+    overflow-y: auto;
+    padding: 0 3%;
+}
+
+section.descricao{
+    top: 50%;
+    transform: translateY(20%);
+}
+
+section.descricao h2{
+    color: #343a40;
+    font-size: 46px;
+}
+
+section.descricao h2 > span,
+section.descricao h3 > span
+{
+    color: #ff6767;
+}
+
+section.descricao h3{
+    margin: 15px 0px;
+    color: #6c757d;
+    font-size: 17px;
+}
+
+section.descricao p{
+    color: #6c757d;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+section.descricao p > strong.admin{
+    color: red;
+}
+
+section.descricao p > strong.desenvolvimento{
+    color: red;
+}
+
+section.descricao h1 > a{
+  text-decoration: none;
+  color: black;
+  margin-left: 3px;
+}
+
+.icons-social{
+    margin-top: 20px;
+}
+
+.icons-social a{
+    text-decoration: none;
+    color: white;
+    background-color: gray;
+    width: 40px; 
+    height: 40px;
+    border-radius: 20px;
+    display: inline-block;
+    margin: 0 10px;
+    text-align: center;
+    line-height: 20px;
+}
+
+.icons-social i{ 
+    line-height: 40px;
+}
+
+section.descricao h3 > i{
+  margin: 3px;
+}
+
+
+.dark {
+  text-decoration: none;
+  font-size: 30px;
+  margin: 5px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.darklogo {
+  width: 70px;
+  height: 70px;
+  display: inline-block;
+  vertical-align: middle;
+  border: none;
+}
